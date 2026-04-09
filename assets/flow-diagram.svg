@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">Request/Response Flow (Sequence Diagram)</text>
+
+  <!-- Lifelines -->
+  <line x1="100" y1="60" x2="100" y2="480" stroke="#667eea" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="250" y1="60" x2="250" y2="480" stroke="#764ba2" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="400" y1="60" x2="400" y2="480" stroke="#f093fb" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="550" y1="60" x2="550" y2="480" stroke="#f5576c" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="700" y1="60" x2="700" y2="480" stroke="#4facfe" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- Participant boxes -->
+  <rect x="50" y="50" width="100" height="40" rx="5" fill="url(#grad1)"/>
+  <text x="100" y="75" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Client</text>
+
+  <rect x="200" y="50" width="100" height="40" rx="5" fill="url(#grad1)"/>
+  <text x="250" y="75" text-anchor="middle" font-size="12" fill="white" font-weight="bold">ngrok</text>
+
+  <rect x="350" y="50" width="100" height="40" rx="5" fill="url(#grad1)"/>
+  <text x="400" y="75" text-anchor="middle" font-size="12" fill="white" font-weight="bold">FastAPI</text>
+
+  <rect x="500" y="50" width="100" height="40" rx="5" fill="url(#grad1)"/>
+  <text x="550" y="75" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Ollama</text>
+
+  <rect x="650" y="50" width="100" height="40" rx="5" fill="url(#grad1)"/>
+  <text x="700" y="75" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Model</text>
+
+  <!-- Activation boxes -->
+  <rect x="385" y="120" width="30" height="80" fill="#f093fb" stroke="#d63384" stroke-width="1"/>
+  <rect x="535" y="150" width="30" height="60" fill="#f5576c" stroke="#c92a2a" stroke-width="1"/>
+  <rect x="685" y="180" width="30" height="100" fill="#4facfe" stroke="#1864ab" stroke-width="1"/>
+
+  <!-- Message 1 -->
+  <line x1="100" y1="130" x2="400" y2="130" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="250" y="125" text-anchor="middle" font-size="10" fill="#333">1. POST /v1/chat/completions</text>
+
+  <!-- Message 2 -->
+  <line x1="400" y1="160" x2="550" y2="160" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="475" y="155" text-anchor="middle" font-size="10" fill="#333">2. POST /api/generate</text>
+
+  <!-- Message 3 -->
+  <line x1="550" y1="190" x2="700" y2="190" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="625" y="185" text-anchor="middle" font-size="10" fill="#333">3. Load model &amp; tokenize</text>
+
+  <!-- Processing box on Model -->
+  <rect x="670" y="200" width="60" height="60" rx="3" fill="#e7f5ff" stroke="#4facfe" stroke-width="2"/>
+  <text x="700" y="225" text-anchor="middle" font-size="9" fill="#1864ab">Generate</text>
+  <text x="700" y="240" text-anchor="middle" font-size="9" fill="#1864ab">tokens</text>
+
+  <!-- Response 1 -->
+  <line x1="700" y1="280" x2="550" y2="280" stroke="#22c55e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="625" y="275" text-anchor="middle" font-size="10" fill="#22c55e">4. Generated text</text>
+
+  <!-- Response 2 -->
+  <line x1="550" y1="310" x2="400" y2="310" stroke="#22c55e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="475" y="305" text-anchor="middle" font-size="10" fill="#22c55e">5. JSON response</text>
+
+  <!-- Response 3 -->
+  <line x1="400" y1="340" x2="250" y2="340" stroke="#22c55e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="325" y="335" text-anchor="middle" font-size="10" fill="#22c55e">6. Forward response</text>
+
+  <!-- Response 4 -->
+  <line x1="250" y1="370" x2="100" y2="370" stroke="#22c55e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="175" y="365" text-anchor="middle" font-size="10" fill="#22c55e">7. Final response</text>
+
+  <!-- Legend -->
+  <rect x="750" y="100" width="130" height="100" rx="5" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="815" y="125" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Legend</text>
+
+  <line x1="760" y1="145" x2="790" y2="145" stroke="#333" stroke-width="2"/>
+  <text x="800" y="150" font-size="10" fill="#666">Request</text>
+
+  <line x1="760" y1="165" x2="790" y2="165" stroke="#22c55e" stroke-width="2"/>
+  <text x="800" y="170" font-size="10" fill="#666">Response</text>
+
+  <rect x="760" y="175" width="15" height="15" fill="#e7f5ff" stroke="#4facfe" stroke-width="1"/>
+  <text x="780" y="187" font-size="10" fill="#666">Processing</text>
+</svg>

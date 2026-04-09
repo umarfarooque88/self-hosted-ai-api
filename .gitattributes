@@ -1,0 +1,49 @@
+# Self-Hosted AI API - Git Attributes
+
+# Set default behavior to text
+* text=auto
+
+# Source code
+*.py text diff=python
+*.js text
+*.ts text
+*.tsx text
+*.css text
+*.html text
+
+# Notebooks
+*.ipynb text
+
+# Shell scripts
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Config files
+*.yml text
+*.yaml text
+*.toml text
+*.json text
+*.env text
+*.env.example text
+
+# Documentation
+*.md text
+*.txt text
+
+# Images (binary)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.ico binary
+
+# Docker
+Dockerfile text
+docker-compose*.yml text
+*.dockerfile text
+
+# Explicitly ignore some files
+.gitignore text
+LICENSE text
+Makefile text

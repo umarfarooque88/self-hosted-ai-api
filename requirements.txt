@@ -1,0 +1,15 @@
+# Core dependencies
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+requests>=2.31.0
+
+# ngrok for public URL exposure
+pyngrok>=7.0.0
+nest_asyncio>=1.5.0
+
+# Development
+python-dotenv>=1.0.0
+
+# Optional: for production deployment
+gunicorn>=21.0.0

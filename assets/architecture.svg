@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">Self-Hosted AI API Architecture</text>
+
+  <!-- Client Box -->
+  <rect x="50" y="80" width="200" height="80" rx="10" fill="#4CAF50" stroke="#388E3C" stroke-width="2"/>
+  <text x="150" y="115" text-anchor="middle" font-size="16" fill="white" font-weight="bold">Your Application</text>
+  <text x="150" y="140" text-anchor="middle" font-size="12" fill="white">Web / Mobile / API</text>
+
+  <!-- Arrow 1 -->
+  <line x1="250" y1="120" x2="300" y2="120" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="275" y="110" text-anchor="middle" font-size="11" fill="#666">POST request</text>
+
+  <!-- ngrok Box -->
+  <rect x="300" y="80" width="200" height="80" rx="10" fill="#7B68EE" stroke="#6A5ACD" stroke-width="2"/>
+  <text x="400" y="115" text-anchor="middle" font-size="16" fill="white" font-weight="bold">ngrok Tunnel</text>
+  <text x="400" y="140" text-anchor="middle" font-size="12" fill="white">https://xxxx.ngrok.io</text>
+
+  <!-- Arrow 2 -->
+  <line x1="500" y1="120" x2="550" y2="120" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="525" y="110" text-anchor="middle" font-size="11" fill="#666">Forward</text>
+
+  <!-- FastAPI Box -->
+  <rect x="550" y="80" width="200" height="80" rx="10" fill="#009688" stroke="#00796B" stroke-width="2"/>
+  <text x="650" y="115" text-anchor="middle" font-size="16" fill="white" font-weight="bold">FastAPI Server</text>
+  <text x="650" y="140" text-anchor="middle" font-size="12" fill="white">src/app.py</text>
+
+  <!-- Arrow 3 (down) -->
+  <line x1="650" y1="160" x2="650" y2="220" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="660" y="195" font-size="11" fill="#666">Route to</text>
+
+  <!-- Ollama Box -->
+  <rect x="550" y="220" width="200" height="80" rx="10" fill="#FF9800" stroke="#F57C00" stroke-width="2"/>
+  <text x="650" y="255" text-anchor="middle" font-size="16" fill="white" font-weight="bold">Ollama Server</text>
+  <text x="650" y="280" text-anchor="middle" font-size="12" fill="white">localhost:11434</text>
+
+  <!-- Arrow 4 (down) -->
+  <line x1="650" y1="300" x2="650" y2="360" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="660" y="335" font-size="11" fill="#666">Load &amp; Run</text>
+
+  <!-- Model Box -->
+  <rect x="550" y="360" width="200" height="80" rx="10" fill="#E91E63" stroke="#C2185B" stroke-width="2"/>
+  <text x="650" y="395" text-anchor="middle" font-size="16" fill="white" font-weight="bold">AI Model</text>
+  <text x="650" y="420" text-anchor="middle" font-size="12" fill="white">Qwen / Llama / Mistral</text>
+
+  <!-- Response arrows (curved back) -->
+  <path d="M 550 400 L 300 400 L 300 200 L 250 200" fill="none" stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="320" y="190" font-size="11" fill="#4CAF50">Response flows back</text>
+
+  <!-- Legend -->
+  <rect x="50" y="220" width="200" height="150" rx="5" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="150" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Request Flow</text>
+
+  <line x1="70" y1="275" x2="100" y2="275" stroke="#666" stroke-width="2"/>
+  <text x="110" y="280" font-size="12" fill="#666">HTTP Request</text>
+
+  <line x1="70" y1="300" x2="100" y2="300" stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="110" y="305" font-size="12" fill="#666">Response</text>
+
+  <rect x="70" y="320" width="20" height="20" rx="3" fill="#4CAF50"/>
+  <text x="100" y="335" font-size="11" fill="#666">Client</text>
+
+  <rect x="70" y="350" width="20" height="20" rx="3" fill="#7B68EE"/>
+  <text x="100" y="365" font-size="11" fill="#666">Tunnel</text>
+
+  <rect x="70" y="380" width="20" height="20" rx="3" fill="#009688"/>
+  <text x="100" y="395" font-size="11" fill="#666">API</text>
+
+  <rect x="70" y="410" width="20" height="20" rx="3" fill="#FF9800"/>
+  <text x="100" y="425" font-size="11" fill="#666">Runtime</text>
+
+  <rect x="70" y="440" width="20" height="20" rx="3" fill="#E91E63"/>
+  <text x="100" y="455" font-size="11" fill="#666">Model</text>
+
+  <!-- Deployment Options -->
+  <rect x="50" y="400" width="450" height="180" rx="5" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="275" y="430" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Deployment Options</text>
+
+  <!-- Colab -->
+  <rect x="70" y="450" width="180" height="110" rx="5" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="160" y="475" text-anchor="middle" font-size="13" font-weight="bold" fill="#2E7D32">Google Colab</text>
+  <text x="160" y="495" text-anchor="middle" font-size="11" fill="#666">• Free T4 GPU</text>
+  <text x="160" y="515" text-anchor="middle" font-size="11" fill="#666">• Temporary (~12hrs)</text>
+  <text x="160" y="535" text-anchor="middle" font-size="11" fill="#666">• Development only</text>
+
+  <!-- Production -->
+  <rect x="280" y="450" width="200" height="110" rx="5" fill="#e3f2fd" stroke="#2196F3" stroke-width="1"/>
+  <text x="380" y="475" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565C0">Cloud VM (Prod)</text>
+  <text x="380" y="495" text-anchor="middle" font-size="11" fill="#666">• AWS/GCP/Azure</text>
+  <text x="380" y="515" text-anchor="middle" font-size="11" fill="#666">• Persistent &amp; reliable</text>
+  <text x="380" y="535" text-anchor="middle" font-size="11" fill="#666">• Custom domain + SSL</text>
+</svg>
