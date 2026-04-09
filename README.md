@@ -1,6 +1,6 @@
 # 🚀 Self-Hosted AI API
 
-> Run your own AI model and expose it as an OpenAI-compatible API endpoint. No OpenAI API key required.
+> Run your own AI model and expose it as an OpenAI-compatible API endpoint. No OpenAI or other API key required for your next project.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
