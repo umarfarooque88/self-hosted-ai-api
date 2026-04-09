@@ -16,7 +16,7 @@
 
 | With other AI models | With This Project |
 |-----------------|-------------------|
-| Pay per request 💰 | Free (your own hardware) 🆓 or google collab's GPUs |
+| Pay per request 💰 | Free (your own hardware) 🆓 or google colab's GPUs |
 | Send data to OpenAI | Data stays on your servers 🔒 |
 | Depend on their uptime | You control availability 🎛️ |
 | Fixed models | Choose any open-source model 🔄 |
