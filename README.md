@@ -10,11 +10,11 @@
 
 ## 💡 What Is This? (In Simple Terms)
 
-**This is your own private AI API** that works exactly like OpenAI's API, but runs on your own infrastructure instead of sending requests to OpenAI.
+**This is your own private AI API** that works exactly like OpenAI's API, but runs on your own infrastructure instead of sending requests to anyone.
 
 ### The Problem It Solves
 
-| With OpenAI API | With This Project |
+| With other AI models | With This Project |
 |-----------------|-------------------|
 | Pay per request 💰 | Free (your own hardware) 🆓 |
 | Send data to OpenAI | Data stays on your servers 🔒 |
@@ -46,7 +46,7 @@ It's a wrapper that makes any open-source AI model look like OpenAI's API. **Sam
 
 This is a **learning project + cost-saving tool**. It lets you:
 1. Understand how AI APIs work under the hood
-2. Deploy AI without depending on OpenAI
+2. Deploy AI without depending on other AI models
 3. Save money on high-volume usage
 
 ---
