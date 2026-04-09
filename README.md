@@ -367,11 +367,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [ngrok](https://ngrok.com/) - Secure tunnel to localhost
 - [Google Colab](https://colab.research.google.com/) - Free GPU access
 
-## 📞 Support
-
-- Documentation: [docs/architecture.md](docs/architecture.md)
-- Issues: [GitHub Issues](https://github.com/yourusername/ai-endpoint/issues)
-
 ---
 
-<p align="center">Made with ❤️ by the open-source community</p>
+<p align="center">Made with ❤️ </p>
