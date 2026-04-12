@@ -31,16 +31,7 @@ It's a wrapper that makes any open-source AI model look like OpenAI's API. **Sam
 
 ### Is This Useful For You?
 
-**✅ Yes, if you:**
-- Build apps that use AI and want to reduce API costs
-- Need to keep data private (can't send to OpenAI)
-- Want to experiment with different open-source models
-- Are learning about self-hosting AI infrastructure
 
-**❌ No, if you:**
-- Are happy with OpenAI and others don't mind the costs
-- Need the absolute best models (GPT-4 still beats open-source)
-- Don't want to manage any infrastructure
 
 ### Bottom Line
 
