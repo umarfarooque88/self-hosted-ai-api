@@ -362,7 +362,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🙏 Acknowledgments
 
-
+- [Ollama](https://ollama.ai/) - Local LLM runtime
+- [FastAPI](https://fastapi.tiangolo.com/) - Modern Python web framework
+- [ngrok](https://ngrok.com/) - Secure tunnel to localhost
+- [Google Colab](https://colab.research.google.com/) - Free GPU access
 
 ---
 
